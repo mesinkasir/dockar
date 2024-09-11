@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>http://localhost:8080/dockar/blog/firstpost/</loc>
+		<lastmod>2018-07-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/blog/secondpost/</loc>
+		<lastmod>2018-07-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/blog/thirdpost/</loc>
+		<lastmod>2018-08-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/blog/fourthpost/</loc>
+		<lastmod>2018-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/blog/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/doc/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/doc/getstart/download/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/doc/getstart/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/doc/getstart/install/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/doc/guides/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/doc/guides/cloudtags/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/doc/guides/source/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/doc/introduction/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/doc/runproject/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/about/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/contact/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/another-tag/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/bulgoso/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/bulgososs/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/number-2/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/second-tag/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/posts-with-two-tags/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/guides/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/how-to/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/intro/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/run-project/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/deploy/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/download/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/get-start/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/installation/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/first-install/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/cloud-tags/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/open-source/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/source-cdoe/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/dockar/tags/</loc>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+</urlset>

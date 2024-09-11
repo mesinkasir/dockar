@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Auto SEO injection script by creativitas.dev -->
+<meta name="google-site-verification" content="0zoqStFlWDRgJJOFTS-yw1oDplLs78-Jlz6iRuuuGbM">
+<title>This is my first post.</title>
+<meta content="This is my first post." property="og:title">
+<meta content="This is my first post." name="twitter:title">
+<meta content="This is my first post." name="title">
+<meta content="This is my first post." property="og:site_name">
+<meta content="This is a post on My Blog about agile frameworks." name="description">
+<meta content="This is a post on My Blog about agile frameworks." property="facebook:description">
+<meta content="This is a post on My Blog about agile frameworks." property="og:description">
+<meta content="This is a post on My Blog about agile frameworks." name="twitter:description">
+<meta property="twitter:card" content="summary_large_image">
+<meta content="/media/dokaro.jpg" name="twitter:image">
+<meta content="/media/dokaro.jpg" property="facebook:image">
+<meta content="/media/dokaro.jpg" property="og:image">
+<meta content="This is a post on My Blog about agile frameworks." property="og:image:alt">
+<meta content="This is a post on My Blog about agile frameworks." name="twitter:image:alt">
+<link href="/dockar/media/11tyimage.svg" rel="icon" type="image/x-icon">
+<meta content="https://fb.com" property="facebook:author">
+<meta content="https://twitter.com" property="twitter:author">
+<meta content="@tweetuser" name="twitter:site">
+<meta content="www.fiverr.com/creativitas" name="developer">
+<meta property="og:type" content="website">
+<link rel="canonical" href="http://localhost:8080/blog/firstpost/">
+<link rel="alternate" href="http://localhost:8080/feed/atom.njk" type="application/atom+xml" title="Dockar">
+<link rel="alternate" href="http://localhost:8080/feed/json.njk" type="application/json" title="Dockar">
+<meta name="generator" content="Eleventy v3.0.0">
+<!-- Auto SEO injection script by creativitas.dev -->
+
+<link href="/dockar/css/doc.css" rel="stylesheet">
+<link href="/dockar/css/main.css" rel="stylesheet">
+<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422989243541464" crossorigin="anonymous"></script>
+</head>
+<body>
+ <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+<symbol id="check2" viewBox="0 0 16 16">
+<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+</symbol>
+<symbol id="circle-half" viewBox="0 0 16 16">
+<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+</symbol>
+<symbol id="moon-stars-fill" viewBox="0 0 16 16">
+<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+</symbol>
+<symbol id="sun-fill" viewBox="0 0 16 16">
+<path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+</symbol>
+</svg>
+
+
+<div class="desktop">
+<div class="desktop">
+<nav class="container-fluid border-bottom text-body-emphasis bg-body-tertiary fixed-top">
+<div class="row p-3">
+<div class="col-md-4">
+<a href="http://localhost:8080" class="navbar-brand"><picture><source type="image/avif" srcset="/dockar/img/miMoUJFAEq-778.avif 778w"><source type="image/webp" srcset="/dockar/img/miMoUJFAEq-778.webp 778w"><img loading="lazy" decoding="async" src="/dockar/img/miMoUJFAEq-778.svg" alt="Dockar" class="img-fluid me-1 img-icon-nav" width="778" height="613"></picture> <strong>Dockar</strong></a>
+</div>
+
+
+<div class="col-md-4">
+<form class="d-flex" role="search" data-bs-toggle="modal" data-bs-target="#searchModal">
+<input class="form-control me-2" type="search" placeholder="🔍     Search" aria-label="Search">
+</form>
+</div>
+
+
+<div class="col-md-4 text-end">
+<button class="btn btn-sm align-items-center rounded" type="button" aria-expanded="false" data-bs-toggle="dropdown">
+<i class="bi bi-grid"></i>
+<span class="visually-hidden" id="pages">Toggle Page</span>
+</button>
+<ul class="dropdown-menu dropdown-menu-end shadow semi" aria-labelledby="pages">
+
+<li>
+<a href="/dockar/">
+<button type="button" class="dropdown-item d-flex align-items-center" aria-pressed="false">
+Home
+</button>
+</a>
+</li>
+
+<li>
+<a href="/dockar/about/">
+<button type="button" class="dropdown-item d-flex align-items-center" aria-pressed="false">
+About
+</button>
+</a>
+</li>
+
+<li>
+<a href="/dockar/doc/introduction/">
+<button type="button" class="dropdown-item d-flex align-items-center" aria-pressed="false">
+Docs
+</button>
+</a>
+</li>
+
+<li>
+<a href="/dockar/blog/">
+<button type="button" class="dropdown-item d-flex align-items-center" aria-pressed="false">
+Blog
+</button>
+</a>
+</li>
+
+<li>
+<a href="/dockar/contact/">
+<button type="button" class="dropdown-item d-flex align-items-center" aria-pressed="false">
+Contact
+</button>
+</a>
+</li>
+
+</ul>
+
+
+
+<a href="https://github.com/mesinkasir/dockar/" class="btn btn-sm rounded" title="Github Repo">
+<i class="bi bi-github"></i>
+</a>
+
+<a href="https://www.hockeycomputindo.com/en/jamstack/" class="btn btn-sm rounded" title="Visit Main Site">
+<i class="bi bi-rocket-takeoff"></i>
+</a>
+
+
+
+<button class="btn btn-sm align-items-center rounded" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+<svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+<span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+</button>
+<ul class="dropdown-menu dropdown-menu-end shadow semi" aria-labelledby="bd-theme-text">
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+<svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+Light
+<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+<svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+Dark
+<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+<svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+Auto
+<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+</button>
+</li>
+</ul>
+
+</div>
+</div>
+</nav>
+</div>  
+
+<div class="container-fluid">
+<div class="row docs-page">
+<div class="col-md-3 p-3" id="doku" data-bs-spy="scroll" data-bs-target="#docu-lists">
+
+<h3 class="semi p-3" id="update-article">Update Article</h3>
+<ul id="docu-lists">
+
+<li><a href="/dockar/blog/fourthpost/">This is my fourth post!</a></li>
+
+<li><a href="/dockar/blog/thirdpost/">This is my third post.</a></li>
+
+<li><a href="/dockar/blog/secondpost/">This is my second post with a much longer title.</a></li>
+
+<li><a href="/dockar/blog/firstpost/">This is my first post.</a></li>
+
+<li><a href="http://localhost:8080/blog/">Explore All Post</a></li>
+</ul>
+
+</div>      
+<div class="col-md-7 p-3 docs-article">
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+<ol class="breadcrumb semi">
+<li class="breadcrumb-item"><a href="http://localhost:8080">Home</a></li>
+<li class="breadcrumb-item"><a href="http://localhost:8080/blog/">Blog</a></li>
+<li class="breadcrumb-item active" aria-current="page">This is my first post.</li>
+</ol>
+</nav>
+<h1 id="this-is-my-first-post"><strong><a class="text-body-emphasis" href="/dockar/blog/firstpost/">This is my first post.</a></strong></h1>
+<picture><source type="image/avif" srcset="/dockar/img/WxVQO0llPJ-1024.avif 1024w"><source type="image/webp" srcset="/dockar/img/WxVQO0llPJ-1024.webp 1024w"><img loading="lazy" decoding="async" src="/dockar/img/WxVQO0llPJ-1024.jpeg" class="img-fluid mt-3 mb-3" alt="This is my first post." width="1024" height="1024"></picture>
+<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+<h2 id="section-header" tabindex="-1">Section Header <a class="header-anchor" href="#section-header"></a></h2>
+<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+<pre class="language-diff-js" tabindex="0"><code class="language-diff-js"><span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// this is a command</span>
+<span class="token prefix unchanged"> </span><span class="token keyword">function</span> <span class="token function">myCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="token inserted-sign inserted language-js"><span class="token prefix inserted">+</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="token deleted-sign deleted language-js"><span class="token prefix deleted">-</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="token unchanged language-js"><span class="token prefix unchanged"> </span>  counter<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token prefix unchanged"> </span><span class="token punctuation">}</span>
+</span>
+<span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// Test with a line break above this line.</span>
+<span class="token prefix unchanged"> </span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h2 id="doberso" tabindex="-1">Doberso <a class="header-anchor" href="#doberso"></a></h2>
+<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immers</p>
+
+<div class="mt-3 row">
+<p class="small text-body-secondary"><i class="bi bi-tags"></i> Tags:
+<a href="/dockar/tags/another-tag/" class="small text-body-secondary ms-3">another tag</a>
+<a href="/dockar/tags/bulgoso/" class="small text-body-secondary ms-3">bulgoso</a>
+<a href="/dockar/tags/bulgososs/" class="small text-body-secondary ms-3">bulgososs</a>
+</p>
+<p class="col-md-6 semi text-body-secondary ">
+<i class="bi bi-calendar2-event"></i> Update At <strong>04 July 2018</strong> 
+</p>
+<p class="col-md-6 semi text-body-secondary text-end"><i class="bi bi-person me-1"></i> Author:  <strong>saleho</strong></p>
+</div>
+
+<div class="row mt-3">
+<div class="col-md-6">
+</div>
+<div class="col-md-6 text-end">
+<div class="p-3 rounded text-body-emphasis bg-body-tertiary card">
+<a href="/dockar/blog/secondpost/" class="text-body-emphasis" title="This is my second post with a much longer title.">
+<p class="small">Next <i class="bi bi-arrow-right-short"></i></p>
+<h3 class="pag-title" id="this-is-my-second-post-with-a-much-longer-title">This is my second post with a much longer title.</h3>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-md-2 p-3 docs-tocker" id="toci">
+
+<p class="tocs"><strong>On this Page</strong></p>
+<div class="small"><div class="toc">
+        <ul><li><a href="#section-header">Section Header </a></li><li><a href="#doberso">Doberso </a></li></ul>
+      </div></div>
+
+
+<p class="semi">Tags :</p>
+<p class="small">
+
+
+<a href="/dockar/tags/docs/" class="me-3 text-body-secondary">docs</a>
+
+
+<a href="/dockar/tags/another-tag/" class="me-3 text-body-secondary">another tag</a>
+
+
+<a href="/dockar/tags/bulgoso/" class="me-3 text-body-secondary">bulgoso</a>
+
+
+<a href="/dockar/tags/bulgososs/" class="me-3 text-body-secondary">bulgososs</a>
+
+
+<a href="/dockar/tags/number-2/" class="me-3 text-body-secondary">number 2</a>
+
+
+<a href="/dockar/tags/second-tag/" class="me-3 text-body-secondary">second tag</a>
+
+
+<a href="/dockar/tags/posts-with-two-tags/" class="me-3 text-body-secondary">posts with two tags</a>
+
+
+<a href="/dockar/tags/guides/" class="me-3 text-body-secondary">guides</a>
+
+
+<a href="/dockar/tags/how-to/" class="me-3 text-body-secondary">how to</a>
+
+
+<a href="/dockar/tags/intro/" class="me-3 text-body-secondary">intro</a>
+
+
+<a href="/dockar/tags/run-project/" class="me-3 text-body-secondary">run project</a>
+
+
+<a href="/dockar/tags/deploy/" class="me-3 text-body-secondary">deploy</a>
+
+
+<a href="/dockar/tags/download/" class="me-3 text-body-secondary">download</a>
+
+
+<a href="/dockar/tags/get-start/" class="me-3 text-body-secondary">get start</a>
+
+
+<a href="/dockar/tags/installation/" class="me-3 text-body-secondary">installation</a>
+
+
+<a href="/dockar/tags/first-install/" class="me-3 text-body-secondary">first install</a>
+
+
+<a href="/dockar/tags/cloud-tags/" class="me-3 text-body-secondary">cloud tags</a>
+
+
+<a href="/dockar/tags/open-source/" class="me-3 text-body-secondary">open source</a>
+
+
+<a href="/dockar/tags/source-cdoe/" class="me-3 text-body-secondary">source cdoe</a>
+
+</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="mobile">
+<div class="mobile">
+<nav class="navbar fixed-top border-bottom text-body-emphasis bg-body-tertiary">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#docPage" aria-controls="docPage" aria-label="Toggle navigation">
+<i class="bi bi-list"></i>
+</button>
+<a class="navbar-brand" href="http://localhost:8080"><strong>Dockar</strong></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuPage" aria-controls="menuPage" aria-label="Toggle navigation">
+<i class="bi bi-three-dots-vertical"></i>
+</button>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menuPage" aria-labelledby="menuPageLabel">
+<div class="offcanvas-header border-bottom">
+<h5 class="offcanvas-title" id="menuPageLabel">Page</h5>
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+<ul class="navbar-nav justify-content-end flex-grow-1 pe-3 p-3">
+
+<li class="nav-item">
+<a class="nav-link active" href="/dockar/">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="/dockar/about/">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="/dockar/doc/introduction/">Docs</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="/dockar/blog/">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="/dockar/contact/">Contact</a>
+</li>
+
+<li class="nav-item mt-5 p-3 text-center border-top">
+
+<a href="https://github.com/mesinkasir/dockar/" class="btn btn-sm rounded" title="Github Repo"><i class="bi bi-github"></i></a>
+
+<a href="https://www.hockeycomputindo.com/en/jamstack/" class="btn btn-sm rounded" title="Visit Main Site"><i class="bi bi-rocket-takeoff"></i></a>
+
+
+<button class="btn align-items-center rounded" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+<svg class="bi theme-icon-active btn-sm" width="14" height="14"><use href="#circle-half"></use></svg>
+<span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+</button>
+<ul class="dropdown-menu shadow" aria-labelledby="bd-theme-text">
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+<svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+Light
+<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+<svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+Dark
+<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+<svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+Auto
+<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+</button>
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="docPage" aria-labelledby="docPageLabel">
+<div class="offcanvas-header">
+<h5 class="offcanvas-title" id="docPageLabel">Documentation</h5>
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+<form class="d-flex mb-3" role="search" data-bs-toggle="modal" data-bs-target="#searchModal">
+<input class="form-control me-2" type="search" placeholder="🔍     Search" aria-label="Search">
+</form>
+      
+
+
+<ul class="navbar-nav justify-content-end">
+<li class="nav-item ms-3">
+<a href="/dockar/doc/introduction/" class="nav-link">Introduction</a></li><li class="nav-item dropdown ms-3">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Get Started</a>
+<ul class="dropdown-menu ms-1">
+<li class="nav-item ms-3">
+<a href="/dockar/doc/getstart/download/" class="nav-link">Download</a></li>
+<li class="nav-item ms-3">
+<a href="/dockar/doc/getstart/install/" class="nav-link">Installation</a></li></ul>
+</li><li>
+</li><li class="nav-item dropdown ms-3">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Guides</a>
+<ul class="dropdown-menu ms-1">
+<li class="nav-item ms-3">
+<a href="/dockar/doc/guides/source/" class="nav-link">Show Edit Source</a></li>
+<li class="nav-item ms-3">
+<a href="/dockar/doc/guides/cloudtags/" class="nav-link">Show Cloud Tags</a></li></ul>
+</li><li>
+</li>
+<li class="nav-item ms-3">
+<a href="/dockar/doc/runproject/" class="nav-link">Run Project</a></li></ul>
+</div>
+</div>
+
+</div>
+</nav>
+</div>
+
+<div class="container-fluid">
+<div class="row mt-5">
+<div class="col-md-12 p-3 docs-article">
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+<ol class="breadcrumb semi">
+<li class="breadcrumb-item"><a href="http://localhost:8080">Home</a></li>
+<li class="breadcrumb-item"><a href="http://localhost:8080/blog/">Blog</a></li>
+<li class="breadcrumb-item active" aria-current="page">This is my first post.</li>
+</ol>
+</nav>
+
+<div class="text-center mb-3">
+<button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse" data-bs-target="#TocDetail" aria-expanded="false" aria-controls="TocDetail">
+Explore Article Lists
+</button>
+</div>
+<div class="collapse mt-3 mb-3" id="TocDetail">
+<div class="card card-body">
+<h3 class="semi p-3" id="update-article-2">Update Article</h3>
+<ul class="small">
+
+<li><a href="/dockar/blog/fourthpost/">This is my fourth post!</a></li>
+
+<li><a href="/dockar/blog/thirdpost/">This is my third post.</a></li>
+
+<li><a href="/dockar/blog/secondpost/">This is my second post with a much longer title.</a></li>
+
+<li><a href="/dockar/blog/firstpost/">This is my first post.</a></li>
+
+<li><a href="http://localhost:8080/blog/">Explore All Post</a></li>
+</ul>
+</div>
+</div>
+
+<h1 id="this-is-my-first-post-2"><strong><a class="text-body-emphasis" href="/dockar/blog/firstpost/">This is my first post.</a></strong></h1>
+  <picture><source type="image/avif" srcset="/dockar/img/WxVQO0llPJ-1024.avif 1024w"><source type="image/webp" srcset="/dockar/img/WxVQO0llPJ-1024.webp 1024w"><img loading="lazy" decoding="async" src="/dockar/img/WxVQO0llPJ-1024.jpeg" class="img-fluid mt-3 mb-3" alt="This is my first post." width="1024" height="1024"></picture>
+<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+<h2 id="section-header" tabindex="-1">Section Header <a class="header-anchor" href="#section-header"></a></h2>
+<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+<pre class="language-diff-js" tabindex="0"><code class="language-diff-js"><span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// this is a command</span>
+<span class="token prefix unchanged"> </span><span class="token keyword">function</span> <span class="token function">myCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="token inserted-sign inserted language-js"><span class="token prefix inserted">+</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="token deleted-sign deleted language-js"><span class="token prefix deleted">-</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="token unchanged language-js"><span class="token prefix unchanged"> </span>  counter<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token prefix unchanged"> </span><span class="token punctuation">}</span>
+</span>
+<span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// Test with a line break above this line.</span>
+<span class="token prefix unchanged"> </span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h2 id="doberso" tabindex="-1">Doberso <a class="header-anchor" href="#doberso"></a></h2>
+<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immers</p>
+
+<div class="mt-3 row">
+<p class="small text-body-secondary"><i class="bi bi-tags"></i> Tags:
+<a href="/dockar/tags/another-tag/" class="small text-body-secondary ms-3">another tag</a>
+<a href="/dockar/tags/bulgoso/" class="small text-body-secondary ms-3">bulgoso</a>
+<a href="/dockar/tags/bulgososs/" class="small text-body-secondary ms-3">bulgososs</a>
+  </p>
+<p class="col-12 semi text-body-secondary ">
+<i class="bi bi-calendar2-event"></i> Update At <strong>04 July 2018</strong> 
+</p>
+<p class="col-12 semi text-body-secondary"><i class="bi bi-person me-1"></i> Author:  <strong>saleho</strong></p>
+</div>
+
+<div class="row mt-3">
+<div class="col-md-6">
+</div>
+<div class="col-md-6 text-end">
+<div class="p-3 rounded text-body-emphasis bg-body-tertiary card">
+<a href="/dockar/blog/secondpost/" class="text-body-emphasis" title="This is my second post with a much longer title.">
+<p class="small">Next <i class="bi bi-arrow-right-short"></i></p>
+<h3 class="pag-title" id="this-is-my-second-post-with-a-much-longer-title-2">This is my second post with a much longer title.</h3>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+ <footer class="container-fluid border-bottom text-body-emphasis bg-body-tertiary mt-3 border-top">    
+<div class="row justify-content-center mb-3">
+
+<div class="col-md-3 col-6 p-3 p-md-5 semi">
+<h3 class="pag-title" id="get-start">Get Start</h3>
+<hr class="col-md-2 col-4">
+<p class="ms-3">
+<a class="text-body-secondary" href="/dockar/doc/getstart/download/">Download</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="/dockar/doc/getstart/install/">Installation</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="/dockar/doc/guides/">Guides</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="/dockar/doc/runproject/">Run Project</a>
+</p>
+</div>
+
+<div class="col-md-3 col-6 p-3 p-md-5 semi">
+<h3 class="pag-title" id="11ty-themes">11ty Themes</h3>
+<hr class="col-md-2 col-4">
+<p class="ms-3">
+<a class="text-body-secondary" href="https://www.hockeycomputindo.com/themes/eleventy/">Eleventy Themes</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="https://www.hockeycomputindo.com/themes/eleventy/captaline/">Company 11ty</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="https://www.hockeycomputindo.com/themes/eleventy/litov-jamstack-cms/">Minimalist 11ty</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="https://www.hockeycomputindo.com/themes/">All Themes</a>
+</p>
+</div>
+
+<div class="col-md-3 col-6 p-3 p-md-5 semi">
+<h3 class="pag-title" id="sponsor">Sponsor</h3>
+<hr class="col-md-2 col-4">
+<p class="ms-3">
+<a class="text-body-secondary" href="https://www.hockeycomputindo.com/en/jamstack/">Hc Com</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="https://www.axcora.com/en/websitedeveloper/">Axcora</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="https://creativitas.dev">Creativitas</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="https://creativitas.dev/service/build-develop-website-with-jekyll-eleventy-astro-static-site-generator/">Hire Dev</a>
+</p>
+</div>
+
+<div class="col-md-3 col-6 p-3 p-md-5 semi">
+<h3 class="pag-title" id="support-us">Support Us</h3>
+<hr class="col-md-2 col-4">
+<p class="ms-3">
+<a class="text-body-secondary" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=JVZVXBC4N9DAN">Paypal</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="https://creativitaz.gumroad.com/coffee">Gumroad</a>
+</p><p class="ms-3">
+<a class="text-body-secondary" href="https://github.com/sponsors/mesinkasir?frequency=one-time">Github</a>
+</p>
+</div>
+
+</div>
+
+</footer>
+
+<div class="text-center small p-1 text-body-secondary ft"></div>
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header bg-body-secondary">
+<h1 class="modal-title fs-5" id="searchModalLabel">Search</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="p-3">
+<link href="/dockar/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/dockar/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>window.addEventListener('DOMContentLoaded', (event) => {new PagefindUI({ element: "#search", showSubResults: true }); });</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="/dockar/js/index.js"></script>
+<script src="/dockar/js/main.js"></script>
+</body>
+</html>
