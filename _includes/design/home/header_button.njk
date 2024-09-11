@@ -1,0 +1,7 @@
+{% if header.button %}
+<div class="mt-3">
+{% for btn in header.button %}
+<a href="{{btn.link}}" class="btn bg-body-secondary me-1">{{btn.text}} <i class="bi bi-{{btn.icon}}"></i></a>
+{% endfor %}
+</div>
+{% endif %}

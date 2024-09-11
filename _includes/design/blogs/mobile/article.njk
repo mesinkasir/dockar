@@ -1,0 +1,21 @@
+{% for post in posts | reverse %}
+<article class="border-bottom mb-3">
+<h3><strong><a href="{{post.url}}" class="text-body-emphasis">{{post.data.title}}</a></strong></h3>
+{% if post.data.image %}<a href="{{post.url}}" title="{{post.data.title}}">
+<img class="img-fluid img-blog" src="{{post.data.image}}" alt="{{post.data.title}}"/></a>
+{% endif %}
+<p>{{post.data.description}}</p>
+<p class="small text-body-secondary"><i class="bi bi-tags"></i> Tags: 
+{%- for tag in tags | filterTagList %}{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<a href="{{ tagUrl }}" class="small text-body-secondary ms-3">{{tag}}</a> {%- endfor %}
+</p>
+<div class="mt-3 row">
+<p class="col-12 semi text-body-secondary ">
+<i class="bi bi-calendar2-event me-1"></i> Publish At <strong>{{ post.data.date | readableDate("dd LLLL yyyy") }}</strong> 
+</p>
+{% if post.data.author %}<p class="col-12 semi text-body-secondary text-end ">
+<i class="bi bi-person me-1"></i> Author: <strong>{{post.data.author}}</strong>
+</p>{% endif %}
+</div>
+</article>
+{% endfor %}

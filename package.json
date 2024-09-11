@@ -1,0 +1,51 @@
+{
+	"name": "Dockar",
+	"version": "1.0.1",
+	"description": "Build your documentation site using the Eleventy site generator.",
+	"type": "module",
+	"scripts": {
+		"build": "npx @11ty/eleventy",
+		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
+		"build-ghpages": "npx @11ty/eleventy --pathprefix=/dockar/",
+		"start": "npx @11ty/eleventy --serve --quiet",
+		"start-ghpages": "npx @11ty/eleventy --pathprefix=/dockar/ --serve --quiet",
+		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
+		"debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+		"benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/mesinkasir/dockar.git"
+	},
+	"author": {
+		"name": "Creativitas.dev",
+		"email": "creativebydre@gmail.com",
+		"url": "https://creativitas.dev/"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=18"
+	},
+	"funding": {
+		"type": "github",
+		"url": "https://github.com/sponsors/mesinkasir?frequency=one-time"
+	},
+	"homepage": "https://dockar.axcora.com/",
+	"demopage": "https://mesinkasir.github.io/dockar",
+	"devDependencies": {
+		"@11ty/eleventy": "^3.0.0-beta.1",
+		"@11ty/eleventy-img": "5.0.0-beta.9",
+		"@11ty/eleventy-navigation": "^0.3.5",
+		"@11ty/eleventy-plugin-rss": "^2.0.2",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+		"cross-env": "^7.0.3",
+		"luxon": "^3.4.4",
+		"zod": "^3.23.8",
+		"zod-validation-error": "^3.3.0"
+	},
+	"dependencies": {
+		"eleventy-plugin-toc": "^1.1.5",
+		"eleventy-plugin-youtube-embed": "^1.11.0",
+		"markdown-it-anchor": "^9.0.1"
+	}
+}

@@ -1,0 +1,11 @@
+<div class="col-md-2 p-3 docs-tocker" id="toci">
+{% if show_tag_cloud %}
+<p class="semi">Tags :</p>
+<p class="small">
+{% for tag in collections | getKeys | filterTagList %}
+{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<a href="{{tagUrl}}" class="me-3 text-body-secondary">{{tag}}</a>
+{% endfor %}
+</p>
+{% endif %}
+</div>

@@ -1,0 +1,21 @@
+<div class="col-md-3 p-3" id="doku" data-bs-spy="scroll" data-bs-target="#docu-lists">
+<p><strong>Documentation</strong></p>
+{% set navPages = collections.all | eleventyNavigation %}
+{% macro renderNavListItem(entry) -%}
+{%- if entry.children.length -%}
+<li{% if entry.url == page.url %} class="nav-item dropdown ms-1 active" aria-current="page"{% else %} class="nav-item dropdown ms-1" {% endif %}>
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">{{ entry.title }}</a>
+<ul>
+{%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+</ul>
+<li>
+{% else %}
+<li{% if entry.url == page.url %} class="nav-item active" aria-current="page"{% else %} class="nav-item ms-1" {% endif %}>
+<a href="{{ entry.url }}" {% if entry.url == page.url %} class="nav-link active" class="nav-link" {% endif %}}>{{ entry.title }}</a>
+{%- endif -%}
+</li>
+{%- endmacro %}
+<ul id="docu-lists">
+{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+</ul>
+</div>

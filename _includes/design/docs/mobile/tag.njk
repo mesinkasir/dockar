@@ -1,0 +1,5 @@
+<p class="small text-body-secondary"><i class="bi bi-tags"></i> Tags: 
+{%- for tag in tags | filterTagList %}{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<a href="{{ tagUrl }}" class="small text-body-secondary ms-3">{{ tag }}</a> 
+{%- endfor %}
+</p>

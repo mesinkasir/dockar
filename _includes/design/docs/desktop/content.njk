@@ -1,0 +1,4 @@
+<h1>{{title}}</h1>
+{% if image %}<img src="{{image}}" class="img-fluid" width="100%" height="100%" alt="{{title}}"/>{% endif %}
+{{content|safe}}
+{% include "design/docs/mobile/tag.njk" %}

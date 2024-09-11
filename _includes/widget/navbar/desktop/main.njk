@@ -1,0 +1,20 @@
+<div class="desktop">
+<nav class="container-fluid border-bottom text-body-emphasis bg-body-tertiary fixed-top">
+<div class="row p-3">
+{% include "widget/navbar/desktop/logo.njk" %}
+{% include "widget/navbar/desktop/search.njk" %}
+<div class="col-md-4 text-end">
+<button class="btn btn-sm align-items-center rounded"
+type="button"
+aria-expanded="false"
+data-bs-toggle="dropdown">
+<i class="bi bi-grid"></i>
+<span class="visually-hidden" id="pages">Toggle Page</span>
+</button>
+{% include "widget/navbar/desktop/page.njk" %}
+{% include "widget/navbar/desktop/icon.njk" %}
+{% include "widget/navbar/desktop/theme.njk" %}
+</div>
+</div>
+</nav>
+</div>  

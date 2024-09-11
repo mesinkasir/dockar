@@ -1,0 +1,17 @@
+{% if metadata.show_footer %}
+ <footer class="container-fluid border-bottom text-body-emphasis bg-body-tertiary mt-3 border-top">    
+<div class="row justify-content-center mb-3">
+{% for s in metadata.footer %}
+<div class="col-md-3 col-6 p-3 p-md-5 semi">
+<h3 class="pag-title">{{s.title}}</h3>
+<hr class="col-md-2 col-4"/>
+{% for f in s.nav %}<p class="ms-3">
+<a class="text-body-secondary" href="{{f.link}}">{{f.name}}</a>
+</p>{% endfor %}
+</div>
+{% endfor %}
+</div>
+</div>
+</footer>
+{% endif %}
+<div class="text-center small p-1 text-body-secondary ft"></div>

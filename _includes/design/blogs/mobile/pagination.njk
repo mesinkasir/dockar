@@ -1,0 +1,11 @@
+<div class="row mt-5">
+<nav aria-label="Page navigation">
+<ul class="pagination justify-content-center small">
+<li class="page-item">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" class="page-link small">← Prev</a></li>{% else %}{% endif %}
+{%- for pageEntry in pagination.pages %}
+<li class="page-item"><a class="page-link small" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+{%- endfor %}
+<li class="page-item">{% if pagination.href.next %}<a class="page-link small" href="{{ pagination.href.next }}">Next →</a></li>{% else %}{% endif %}
+</ul>
+</nav>
+</div>

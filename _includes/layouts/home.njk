@@ -1,0 +1,11 @@
+---
+layout: "layouts/base.njk"
+---
+{% include "widget/navbar/main.njk" %}
+<div class="container mt-5">
+<div class="col-md-10 mx-auto p-3 p-md-5 mt-3">
+{% if title %}<h1><strong><a class="text-body-emphasis" href="{{page.url}}">{{title}}</a></strong></h1>{% endif %}
+{% if description %}<h2 class="lead">{{description}}</h2>{% endif %}
+{{ content | safe }}
+</div>
+</div>

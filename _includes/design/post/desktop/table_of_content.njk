@@ -1,0 +1,4 @@
+{% if show_table_of_content %}
+<p class="tocs"><strong>On this Page</strong></p>
+<div class="small">{{ content | toc| safe }}</div>
+{% endif %}

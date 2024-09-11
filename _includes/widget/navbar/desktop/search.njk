@@ -1,0 +1,9 @@
+{% if metadata.show_search %}
+<div class="col-md-4">
+<form class="d-flex" role="search" data-bs-toggle="modal" data-bs-target="#searchModal">
+<input class="form-control me-2" type="search" placeholder="🔍     {{metadata.search_widget.nav_title}}" aria-label="Search">
+</form>
+</div>
+{% else %}
+<div class="col-md-4"></div>
+{% endif %}

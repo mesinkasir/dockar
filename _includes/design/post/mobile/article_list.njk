@@ -1,0 +1,19 @@
+{% if show_update_post %}
+<div class="text-center mb-3">
+<button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse" data-bs-target="#TocDetail" 
+aria-expanded="false" aria-controls="TocDetail">
+Explore Article Lists
+</button>
+</div>
+<div class="collapse mt-3 mb-3" id="TocDetail">
+<div class="card card-body">
+<h3 class="semi p-3">Update Article</h3>
+<ul class="small">
+{% for article in collections.posts  | reverse | limit(10)  %}
+<li><a href="{{article.url}}">{{article.data.title}}</a></li>
+{% endfor %}
+<li><a href="{{metadata.url}}/blog/">Explore All Post</a></li>
+</ul>
+</div>
+</div>
+{% endif %}

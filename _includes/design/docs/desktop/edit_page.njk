@@ -1,0 +1,5 @@
+{% if show_edit_page %}<p class="col-md-6  text-end">
+<a href="{{metadata.github_project.repo}}/edit/{{metadata.github_project.branch}}/content{{page.filePathStem}}.md" class="icon-link semi text-body-secondary">
+<i class="bi bi-pen"></i> Edit This Page
+</a>
+</p>{% endif %}

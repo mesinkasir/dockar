@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title or metadata.title }}</title>
+<meta name="description" content="{{ description or metadata.description }}">
+<link rel="alternate" href="feed/atom.njk" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="alternate" href="feed/json.njk" type="application/json" title="{{ metadata.title }}">
+<meta name="generator" content="{{ eleventy.generator }}">
+<link href="/css/doc.css" rel="stylesheet" />
+<link href="/css/main.css" rel="stylesheet" />
+<style>{% getBundle "css" %}</style>
+</head>
+<body>
+{% include "widget/icon.njk" %}
+{{ content | safe }}
+{% include "widget/footer.njk" %}
+{% include "widget/search.njk" %}
+<script src="/js/index.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

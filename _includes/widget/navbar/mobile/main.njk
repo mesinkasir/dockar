@@ -1,0 +1,16 @@
+<div class="mobile">
+<nav class="navbar fixed-top border-bottom text-body-emphasis bg-body-tertiary">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#docPage" aria-controls="docPage" aria-label="Toggle navigation">
+<i class="bi bi-list"></i>
+</button>
+<a class="navbar-brand" href="{{metadata.url}}"><strong>{{metadata.title}}</strong></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuPage" aria-controls="menuPage" aria-label="Toggle navigation">
+<i class="bi bi-three-dots-vertical"></i>
+</button>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menuPage" aria-labelledby="menuPageLabel">
+{% include "widget/navbar/mobile/nav_right.njk" %}
+{% include "widget/navbar/mobile/nav_left.njk" %}
+</div>
+</nav>
+</div>

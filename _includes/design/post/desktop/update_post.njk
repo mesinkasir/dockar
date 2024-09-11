@@ -1,0 +1,11 @@
+<div class="col-md-3 p-3" id="doku" data-bs-spy="scroll" data-bs-target="#docu-lists">
+{% if show_update_post %}
+<h3 class="semi p-3">Update Article</h3>
+<ul id="docu-lists">
+{% for article in collections.posts  | reverse | limit(10)  %}
+<li><a href="{{article.url}}">{{article.data.title}}</a></li>
+{% endfor %}
+<li><a href="{{metadata.url}}/blog/">Explore All Post</a></li>
+</ul>
+{% endif %}
+</div>

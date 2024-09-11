@@ -1,0 +1,12 @@
+---
+layout: layouts/blog.njk
+title: Dockar Blogs
+description: Update Article Posts from Dockar Blogs
+image: /media/11tyimage.svg
+show_tag_cloud: true
+pagination:
+  data: collections.posts
+  size: 4
+  alias: posts
+permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---

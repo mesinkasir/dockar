@@ -1,0 +1,11 @@
+---
+layout: layouts/docs.njk
+title: Dockar Documentation
+description: Documentation Dockar Project Update History
+image: /media/11tyimage.svg
+pagination:
+  data: collections.docs
+  size: 12
+  alias: docs
+permalink: "doc/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---

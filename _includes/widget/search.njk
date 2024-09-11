@@ -1,0 +1,18 @@
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header bg-body-secondary">
+<h1 class="modal-title fs-5" id="searchModalLabel">{{metadata.search_widget.modal_title}}</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="p-3">
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>window.addEventListener('DOMContentLoaded', (event) => {new PagefindUI({ element: "#search", showSubResults: true }); });</script>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,18 @@
+<div class="offcanvas-header border-bottom">
+<h5 class="offcanvas-title" id="menuPageLabel">Page</h5>
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+<ul class="navbar-nav justify-content-end flex-grow-1 pe-3 p-3">
+{% for n in metadata.nav %}
+<li class="nav-item">
+<a class="nav-link active" href="{{n.link}}">{{n.name}}</a>
+</li>
+{% endfor %}
+<li class="nav-item mt-5 p-3 text-center border-top">
+{% include "widget/navbar/mobile/icon.njk" %}
+{% include "widget/navbar/mobile/themes.njk" %}
+</li>
+</ul>
+</div>
+</div>

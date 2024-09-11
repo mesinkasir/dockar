@@ -1,0 +1,7 @@
+<h1>HashTags</h1>
+<ul class="row mt-5 mb-5">
+{% for tag in collections | getKeys | filterTagList %}
+{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<li class="col-md-4 col-6 p-3"><a href="{{ tagUrl }}" class="text-body-secondary">{{ tag }}</a></li>
+{% endfor %}
+</ul>

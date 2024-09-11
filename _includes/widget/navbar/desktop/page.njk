@@ -1,0 +1,11 @@
+<ul class="dropdown-menu dropdown-menu-end shadow semi" aria-labelledby="pages">
+{% for n in metadata.nav %}
+<li>
+<a href="{{n.link}}">
+<button type="button" class="dropdown-item d-flex align-items-center" aria-pressed="false">
+{{n.name}}
+</button>
+</a>
+</li>
+{% endfor %}
+</ul>

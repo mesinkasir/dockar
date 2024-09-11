@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<h2 class="lead">
+{{description}}
+</h2>
+<hr/>
+{% for post in docs | reverse %}
+<article class="border-bottom mb-3">
+<h3><strong><a href="{{post.url}}" class="text-body-emphasis">{{post.data.title}}</a></strong></h3>
+{% if post.data.image %}<a href="{{post.url}}">
+<img class="img-fluid img-blog" src="{{post.data.image}}" alt="{{post.data.title}}"/></a>
+{% endif %}
+<p>{{post.data.description}}</p>
+</article>
+{% endfor %}

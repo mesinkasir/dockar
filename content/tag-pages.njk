@@ -1,0 +1,32 @@
+---js
+// <script>
+const pagination = {
+	data: "collections",
+	size: 1,
+	alias: "tag",
+	filter: ["all", "posts", "docs"],
+	addAllPagesToCollections: true,
+};
+
+const eleventyComputed = {
+	title: "All Result for '{{ tag }}'",
+	permalink: function(data) {
+		return `/tags/${this.slugify(data.tag)}/`;
+	}
+};
+---
+<div class="p-3 mt-5 mb-5">
+<h3>{{ tag }} Tags</h3>
+
+{% set postslist = collections[ tag ] %}
+<ul class="row">
+{% for post in postslist | reverse %}
+<li class="col-md-4 col-6 p-3">
+<a href="{{ post.url }}" class="text-body-emphasis">{{ post.data.title }}</a>
+</li>
+{% endfor %}
+</ul>
+
+
+<p>Explore <a href="tags.njk">all tags</a></p>
+</div>

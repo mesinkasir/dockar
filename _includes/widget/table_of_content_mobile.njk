@@ -1,0 +1,13 @@
+{% if show_table_of_content %}
+<div class="text-center mb-3">
+<button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse" data-bs-target="#TocDetail" aria-expanded="false" aria-controls="TocDetail">
+Table of Content
+</button>
+</div>
+<div class="collapse mt-3 mb-3" id="TocDetail">
+<div class="card card-body">
+<p class="tocs"><strong>On this Page</strong></p>
+{{ content | toc| safe }}
+</div>
+</div>
+{% endif %}

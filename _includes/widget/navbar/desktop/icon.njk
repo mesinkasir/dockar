@@ -1,0 +1,7 @@
+{% if metadata.show_social_icon %}
+{% for i in metadata.social %}
+<a href="{{i.link}}" class="btn btn-sm rounded" title="{{i.title}}">
+<i class="bi bi-{{i.icon}}"></i>
+</a>
+{% endfor %}
+{% endif %}
