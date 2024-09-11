@@ -1,6 +1,6 @@
 export default {
 	title: "Dockar",
-	url: "https://mesinkasir.github.io/dockar/", // change this url with your domain
+	url: "https://mesinkasir.github.io/dockar", // change this url with your domain
 	language: "en",
 	description: "Documentation site project built with 11ty",
 	image: "/media/11tyimage.svg",
@@ -33,6 +33,10 @@ export default {
             {
         		name: "Blog",
 		        link: "/blog/"
+	         },
+            {
+        		name: "11ty Themes",
+		        link: "https://www.hockeycomputindo.com/themes/eleventy/"
 	         },
             {
         		name: "Contact",
@@ -136,11 +140,11 @@ export default {
 	         },
            ],
 	author: {
-		name: "Your Name Here",
-		email: "youremailaddress@example.com",
+		name: "Creativitas Dev",
+		email: "creativebydre@gmail.com",
 		facebook: "https://fb.com",
 		twitter: "https://twitter.com",
 		twitter_user: "@tweetuser",
-		url: "https://example.com/about-me/"
+		url: "https://mesinkasir.github.io/dockar"
 	}
 }
