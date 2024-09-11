@@ -6,7 +6,9 @@ Built with [11ty eleventy](https://www.11ty.dev) , develop by [creativitas](http
 
 Documentation [https://dockar.axcora.com](https://dockar.axcora.com)
 
-Run Demo [https://captalinedocpages.dev](https://captalinedocpages.dev)
+Run Demo [https://mesinkasir.github.io/dockar/](https://mesinkasir.github.io/dockar/)
+
+Run Demo on Real Project [https://captalinedocpages.dev](https://captalinedocpages.dev)
 
 ### [🚀 Become a Sponsor](https://github.com/sponsors/mesinkasir) | [☕ Buy me Coffee](https://creativitaz.gumroad.com/coffee)
 
