@@ -1,0 +1,28 @@
+<!-- Auto SEO injection script by creativitas.dev -->
+<meta name="google-site-verification" content="0zoqStFlWDRgJJOFTS-yw1oDplLs78-Jlz6iRuuuGbM"/>
+<title>{{ title or metadata.title }}</title>
+<meta content="{{ title or metadata.title }}" property="og:title">
+<meta content="{{ title or metadata.title }}" name="twitter:title">
+<meta content="{{ title or metadata.title }}" name="title">
+<meta content="{{ title or metadata.title }}" property="og:site_name">
+<meta content="{{ description or metadata.description }}" name="description">
+<meta content="{{ description or metadata.description }}" property="facebook:description">
+<meta content="{{ description or metadata.description }}" property="og:description">
+<meta content="{{ description or metadata.description }}" name="twitter:description">
+<meta property="twitter:card" content="summary_large_image">
+<meta content="{{ image or metadata.image }}" name="twitter:image">
+<meta content="{{ image or metadata.image }}" property="facebook:image">
+<meta content="{{ image or metadata.image }}" property="og:image">
+<meta content="{{ description or metadata.description }}" property="og:image:alt">
+<meta content="{{ description or metadata.description }}" name="twitter:image:alt">
+<link href="{{ metadata.favicon or image }}" rel="icon" type="image/x-icon">
+<meta content="{{metadata.author.facebook}}" property="facebook:author">
+<meta content="{{metadata.author.twitter}}" property="twitter:author">
+<meta content="{{metadata.author.twitter_user}}" name="twitter:site">
+<meta content="www.fiverr.com/creativitas" name="developer">
+<meta property="og:type" content="website">
+<link rel="canonical" href="{{metadata.url}}{{page.url}}">
+<link rel="alternate" href="{{metadata.url}}/feed/atom.njk" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="alternate" href="{{metadata.url}}/feed/json.njk" type="application/json" title="{{ metadata.title }}">
+<meta name="generator" content="{{ eleventy.generator }}">
+<!-- Auto SEO injection script by creativitas.dev -->

@@ -19,6 +19,8 @@ Run Demo [https://captalinedocpages.dev](https://captalinedocpages.dev)
 + Page Find
 + Table Of Content
 + Youtube Lite
++ Dark Light Mode
++ Responsive Design
 
 -----
 
