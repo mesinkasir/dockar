@@ -1,6 +1,6 @@
 export default {
 	title: "Dockar",
-	url: "http://localhost:8080",
+	url: "https://mesinkasir.github.io/dockar/", // change this url with your domain
 	language: "en",
 	description: "Documentation site project built with 11ty",
 	image: "/media/11tyimage.svg",
